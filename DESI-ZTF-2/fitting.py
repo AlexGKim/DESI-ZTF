@@ -173,4 +173,4 @@ class ln_posterior(object):
         integrand = self.eff(mhat)/df*phi
         maxintegrand = integrand.max()
 
-        return jnp.log(maxinterand)  + jnp.log((integrand/maxintegrand).sum()) + nquasar*jnp.log(N_obs) - N_obs
+        return jnp.log(maxintegrand)  + jnp.log((integrand/maxintegrand).sum()) + nquasar*jnp.log(N_obs) - N_obs
